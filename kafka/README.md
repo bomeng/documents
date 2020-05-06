@@ -36,3 +36,20 @@ $ kafka-console-consumer --bootstrap-server localhost:9092 --topic test --from-b
 HELLO Kafka
 ```
 
+## List all the topics
+```
+$ kafka-topics --list --zookeeper localhost:2181
+```
+
+## Delete a topic
+```
+# This command will have no effect if in the Kafka server.properties file, if delete.topic.enable is not set to true.
+
+$ kafka-topics --zookeeper localhost:2181 --delete --topic test
+```
+
+## Describe a topic
+```
+$ kafka-topics --describe --topic test --zookeeper localhost:2181
+```
+
