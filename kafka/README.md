@@ -1,4 +1,4 @@
-# Documentation related to Apache Zookeeper
+# Documentation related to Apache Kafka
 
 ## Installation
 
